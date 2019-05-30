@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome');//使用闭包 view 辅助函数
 });
 
 Route::get('/','StaticPagesController@home')->name('home');

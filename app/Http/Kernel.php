@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http;
+namespace App\Http;//http内核
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -13,7 +13,7 @@ class Kernel extends HttpKernel
      *
      * @var array
      */
-    protected $middleware = [
+    protected $middleware = [//定义了所有请求被应用程序处理之前必须经过的 HTTP 中间件
         \App\Http\Middleware\CheckForMaintenanceMode::class,
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \App\Http\Middleware\TrimStrings::class,
