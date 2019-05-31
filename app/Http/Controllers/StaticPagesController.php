@@ -13,7 +13,7 @@ class StaticPagesController extends Controller
         if(Auth::check()){
             $feed_items = Auth::user()->feed()->paginate(30);
         }
-        throw new \Exception("我故意的", 1);
+        // throw new \Exception("我故意的", 1);
 
         return view('static_pages/home',compact('feed_items'));
    }
